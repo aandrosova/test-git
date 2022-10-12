@@ -1,6 +1,17 @@
-let official = prompt('Какое «официальное» название JavaScript?', '');
-if(official == 'ECMAScript') {
-    alert('Верно!');
+let answer = prompt('Кто там?', '');
+if(answer == 'Админ') {
+    let check = prompt('Пароль?', '');
+    if(check == 'Отмена') {
+        alert('ОТМЕНЕНО');
+    } else if(check == 'Я главный') {
+        alert('Здравствуйте!');
+    } else {
+        alert('Неверный пароль!');
+    }
+} else if(answer == 'Отмена') {
+    alert('ОТМЕНЕНООООО!');
 } else {
-    alert('Неверно!');
+    alert('Не путю!');
+   
 }
+
