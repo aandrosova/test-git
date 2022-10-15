@@ -2,14 +2,18 @@ function calc(action, a, b) {
     action = prompt('Введите необходимое действие', '');
     a = +prompt('Введите первое число', '');
     b = +prompt('Введите второе число', '');
-    if (action === "add") {
-        return alert(a + b);
-    } else if (action === "multi") {
-        return alert(a * b);
-    } else if (action === "subtract") {
-        return alert(a - b);
-    } else {
-        return alert('Вы ввели неверные значения');
+    switch (action) {
+        case 'add':
+            alert(a + b);
+            break;
+        case 'multi':
+            alert(a * b);
+            break;
+        case 'subtract':
+            alert(a - b);
+            break;
+        default:
+            alert('Вы ввели неверные значения');   
     }
 }
 
